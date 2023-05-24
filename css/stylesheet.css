@@ -1,0 +1,32 @@
+
+/* This helps center the etch a sketch to the center of the screen. */
+.centerScreen
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 100vh;
+}
+
+.gridContainer
+{
+    display: flex;
+    flex-wrap: wrap;
+    width: 640px;
+    height: 640px;
+    border-radius: 2px;
+    border-color:  black;
+}
+.gridBox
+{
+    width: 40px;
+    height: 40px;
+    color: red;
+    background-color: blanchedalmond;
+}
+
+.hover
+{
+    background-color: black;
+}
