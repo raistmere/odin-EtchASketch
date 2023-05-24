@@ -5,7 +5,18 @@ generateButton.addEventListener("click", generateGrid);
 function generateGrid()
 {
     //We grab the input from the user to figure out how big they want the grid to be.
-    const userInput = prompt("Number of squares for the grid:");
+    let valid = false;
+    let userInput = '';
+
+    while (valid === false) 
+    {
+        userInput = prompt("Number of squares for the grid:");
+
+        if(parseInt(userInput) < 100)
+        {
+            valid = true;
+        }
+    }
 
     //Because it's a grid, it's userInput by userInput.
     const totalSquares = userInput * userInput;
@@ -15,7 +26,7 @@ function generateGrid()
 
     //We clear all the divs in the gridContainer so we can add the correct divs based on userInput.
     while(gridContainer.firstChild) gridContainer.removeChild(gridContainer.firstChild);
-    
+
     for (let i = 0; i < totalSquares; i++) 
     {
         //Create the new child div
