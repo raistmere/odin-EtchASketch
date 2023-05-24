@@ -15,11 +15,9 @@
     flex-wrap: wrap;
     width: 960px;
     height: 960px;
-    background-color: aqua;
 }
 .gridBox
 {
-    color: red;
     background-color: blanchedalmond;
 }
 
